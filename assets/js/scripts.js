@@ -1,6 +1,5 @@
 /*
 Author       : theme_ocean
-Template Name: Monoline - Design Agency HTML Template
 Version      : 1.0
 */
 (function($) {
