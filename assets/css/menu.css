@@ -34,12 +34,6 @@ display: inline-block; }
 	display: inline-block;
 	text-decoration: none !important;
 }
-.site-navbar .site-navigation .site-menu > li > a:hover {
-color: #ffaa17;
-text-decoration: none;
-border-bottom: 3px solid #ffaa17;
-background: none;
-}
 .site-navbar .site-navigation .site-menu > li.social > a {
 padding-left: 5px;
 padding-right: 5px; }
@@ -315,9 +309,9 @@ color: #ffaa17 !important; }
 
 /* Add yellow underline on hover */
 .site-navbar .site-navigation .site-menu > li > a:hover {
-    color: #ffaa17;
-    text-decoration: none;
-    border-bottom: 3px solid #ffaa17;
+    color: #ffaa17 !important;
+    /* font-weight: bold; */
+    border-bottom: none !important;
     background: none;
 }
 
@@ -333,7 +327,7 @@ color: #ffaa17 !important; }
 
 /* Force dark navbar links on index page */
 body.navbar-dark-text .site-navbar .site-navigation .site-menu > li > a {
-    color: #232a34 !important;
+    /* color: #232a34 !important; */
 }
 body.navbar-dark-text .site-navbar .site-navigation .site-menu > li > a:hover,
 body.navbar-dark-text .site-navbar .site-navigation .site-menu .active {
@@ -344,6 +338,6 @@ body.navbar-dark-text .site-navbar .site-navigation .site-menu .active {
 /* Hero text dark for index page */
 .navbar-dark-text .hero-text h2,
 .navbar-dark-text .hero-text p {
-    color: #232a34;
+    /* color: #232a34; */
     text-shadow: 0 2px 8px rgba(255,255,255,0.5);
 }
