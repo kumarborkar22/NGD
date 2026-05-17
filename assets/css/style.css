@@ -1,3 +1,93 @@
+/* Always-visible portfolio card titles for project.html 4-card grid */
+.portfolio-card-title {
+	position: static !important;
+	color: #222 !important;
+	font-size: 1.1rem !important;
+	font-weight: 700 !important;
+	margin-top: 18px !important;
+	margin-bottom: 0 !important;
+	opacity: 1 !important;
+	background: none !important;
+	text-align: center;
+	transition: none !important;
+}
+.portfolio-card-title a {
+	color: #ffaa17 !important;
+	text-decoration: none;
+}
+.portfolio-card-title a:hover {
+	color: #d48806 !important;
+}
+/* Custom portfolio section grid for project.html only */
+.custom-portfolio-row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.custom-portfolio-card {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+	padding: 18px 10px 24px 10px;
+	margin-bottom: 32px;
+	text-align: center;
+	transition: box-shadow 0.2s;
+}
+.custom-portfolio-card:hover {
+	box-shadow: 0 8px 32px rgba(14,92,166,0.13);
+}
+.portfolio-img-custom {
+	width: 220px;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin: 0 auto 16px auto;
+	display: block;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.custom-portfolio-card h4 {
+	margin-top: 16px;
+	font-size: 1.15rem;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+.custom-portfolio-card h4 a {
+	color: #ffaa17;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+.custom-portfolio-card h4 a:hover {
+	color: #d48806;
+}
+/* Portfolio grid image sizing */
+.portfolio-img {
+	width: 320px;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 14px;
+	box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+	margin: 0 auto 18px auto;
+	display: block;
+}
+/* Feature section learn more link styles */
+.feature-link {
+	color: #ffaa17;
+	font-weight: 600;
+	text-decoration: underline;
+	transition: color 0.2s, background 0.2s;
+}
+.feature-link:hover, .feature-link:focus {
+	color: #d48806;
+	background: #fffbe6;
+	text-decoration: underline;
+}
+/* Highlight Glass and Dials in Navbar */
+.nav-highlight {
+	font-size: 20px !important;
+	font-weight: 700 !important;
+	color: #ffaa17 !important;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
 /* Dial Portfolio Image Enhancements */
 .dial-portfolio-img {
 	max-width: 340px;
@@ -1108,7 +1198,7 @@ margin-bottom:30px;
 	content: '';
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
+	/* background-color: rgba(0, 0, 0, 0.4); */
 	transition: .5s;
 	opacity: 0;
 	border-radius: 4px;

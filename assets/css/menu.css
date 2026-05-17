@@ -14,7 +14,13 @@ position: relative;
 left: 0;
 font-size: 24px; }
 .site-navbar .site-navigation .site-menu {
-margin-bottom: 0;float: right; }
+    margin-bottom: 0;
+    float: right;
+}
+
+body.index-page .site-navbar .site-navigation .site-menu {
+    float: left;
+}
 .site-navbar .site-navigation .site-menu .active {
 color: #ffaa17;
 display: inline-block;

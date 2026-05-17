@@ -43,7 +43,7 @@
 		<![endif]-->
 	</head>
 	
-    <body data-spy="scroll" data-offset="80">
+	<body data-spy="scroll" data-offset="80" class="index-page">
 
 		<!-- START PRELOADER -->
 		<div class="preloader">
@@ -73,8 +73,8 @@
 			  <div class="col-12 col-md-10 d-none d-xl-block">
 				<nav class="site-navigation position-relative text-right" role="navigation">
 				  <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-									 <li><a href="glass.html" class="nav-link">Glass</a></li>
-									 <li><a href="dial.html" class="nav-link">Dials</a></li>
+									 <li><a href="glass.html" class="nav-link nav-highlight" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tap here to see more about Glass">Glass</a></li>
+									 <li><a href="dial.html" class="nav-link nav-highlight" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tap here to see more about Dials">Dials</a></li>
 				  </ul>
 				</nav>
 			  </div>
@@ -155,6 +155,7 @@
 							<img src="assets/img/logo bgimage.png" alt="Glass icon" />
 							<h4>Glass Manufacturing</h4>
 							<p>Durable, high-clarity glass products tailored for various industries and applications.</p>
+							<a href="glass.html" class="feature-link">learn more</a>
 						</div>
 					</div><!-- END COL -->
 					<div class="col-lg-6 col-sm-6 col-xs-12 no-padding wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
@@ -162,6 +163,7 @@
 							<img src="assets/img/nationalglass-removebg.png" alt="Dial icon" />
 							<h4>Dial Manufacturing</h4>
 							<p>Precision dials engineered for accuracy and reliability in demanding environments.</p>
+							<a href="dial.html" class="feature-link">learn more</a>
 						</div>
 					</div><!-- END COL -->
 				</div><!-- END ROW -->
@@ -285,9 +287,11 @@
 		<!-- END FOOTER -->	
 
 		<!-- Latest jQuery -->
-			<script src="assets/js/jquery-1.12.4.min.js"></script>
+		<script src="assets/js/jquery-1.12.4.min.js"></script>
+		<!-- Popper.js for Bootstrap tooltips (required for Bootstrap 5) -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 		<!-- Latest compiled and minified Bootstrap -->
-			<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 		<!-- modernizer JS -->		
 			<script src="assets/js/modernizr-2.8.3.min.js"></script>																		
 		<!-- owl-carousel min js  -->
@@ -314,5 +318,14 @@
 			<script src="assets/js/scrolltopcontrol.js"></script>																				
 		<!-- scripts js -->
 			<script src="assets/js/scripts.js"></script>		
-    </body>
+		<script>
+		// Ensure tooltips are initialized after all scripts are loaded
+		window.addEventListener('load', function () {
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+			tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+				new bootstrap.Tooltip(tooltipTriggerEl);
+			});
+		});
+		</script>
+		</body>
 </html>
