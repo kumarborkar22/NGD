@@ -255,10 +255,11 @@
                                 <p class="fnr" style="color: #fff;">
                                     Have a question or need a quote? Send us your email and we’ll get back to you about our Reflex & Sight Glass products and solutions.
                                 </p>
-                                <div class="form">
-                                    <input class="form-control" placeholder="Your Email">
-                                    <button class="sendbtn">Send</button>
-                                </div>
+								<form method="POST" action="https://formspree.io/f/mredgjay" class="form">
+									<input class="form-control" type="email" name="email" placeholder="Your Email" required>
+									<input type="hidden" name="subject" value="Newsletter Signup">
+									<button class="sendbtn" type="submit">Send</button>
+								</form>
                             </div>
 						</div>
 					</div><!--- END COL -->		
